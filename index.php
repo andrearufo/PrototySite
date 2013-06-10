@@ -1,6 +1,7 @@
 <!--
 
 PrototySite Script by Andrea Rufo, www.orangedropdesign.com
+ver. 1.1
 
 -->
 
@@ -37,7 +38,7 @@ $list = listfiles($root);
 
 // scelgo l'immagine da visualizzare
 
-if(!isset($_GET['img']) && !in_array($start, $list)){
+if(!isset($_GET['img']) && $start != '' && !in_array($start, $list)){
 	exit('<div class="errore">Errore: immagine di partenza non presente. Continuare? <a href="?img='.$list[0].'">Sì</a></div>');
 }
 
@@ -68,7 +69,7 @@ $infos = getimagesize($root.'/'.$img);
 
 ?>
 
-	<div id="container" style="
+	<div id="container" title="Clicca per l'elenco dei prototipi" style="
 		height: <?=$infos[1]?>;
 		background-image:url(<?=$root.'/'.$img?>)
 	"></div>

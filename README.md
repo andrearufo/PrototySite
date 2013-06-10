@@ -7,6 +7,10 @@ Questo progetto è dedicato in particolar modo ai grafici con poche competenze d
 
 Sonnino, 9 giu 2013 23:40
 
+##Demo##
+
+Potete visualizzare una demo di come opera lo script con diverse immagini su [http://dev.orangedropdesign.com/PrototySite/](http://dev.orangedropdesign.com/PrototySite/ "Orange Drop Design Dev, Demo di PrototySite").
+
 ##Come funziona##
 
 In pratica lo script visualizza una immagine all'interno di una pagina web e, grazie a un po' di programmazione, imposta automaticamente tutta una serie di parametri per poter permettere una corretta visualizzazione. 
@@ -17,6 +21,7 @@ Lo script si riduce tutto a pochi file: in particolare a index.php che è il pri
 
 ##Installazione##
 
+* Create il layout in Photoshop ed esportate in JPEG o PNG (si consiglia una larghezza di __1900px__ per una corretta visualizzazione sugli schermi più grandi);
 * Salvate tutte le vostre immagini prototipo in una cartella dello script (per esempio in 'images/');
 * Aprite la pagina __index.php__ e configurate i parametri (leggi sotto);
 * Caricate tutti i file del progetto (index.php; assets/ e images/) sul vostro spazio web via FTP;
