@@ -39,3 +39,30 @@ Si possono configurare 4 variabili:
 * __$start__: è l'immagine di partenza; se non impostata parte dalla prima che viene trovata nella cartella specificata in $root.
 * __$bgcol__: indica il colore di sfondo della pagina; se non impostato è bianco. Risulta utile nel caso la grafica fosse più corta dello schermo dell'utente o nel caso non coprisse tutte l'area visualizzata.
 * __$title__: imposta titolo della pagina
+
+##Versioni##
+
+###ver. 0.1###
+
+Script di visualizzazione con gestione manuale dell'indirizzo web
+
+###ver. 1.0###
+
+Prima release pubblica con elenco immagini e link automatici a tutta pagina
+
+###ver. 1.1###
+
+Correzzione di alcuni bug nella selezione delle immagini e nell'automatizzazione della visualizzazione
+
+###ver. 1.2###
+
+Creazione di una barra di utilità invece della lista a tutta pagina
+
+###ver. 1.3###
+
+Miglioramento della barra e creazione delle funzioni per la gestiona della navigazion
+
+##Sviluppi futuri##
+
+* Form per il caricamento di una nuova immagine direttamente dalla pagina web
+* Visualizzazione di alcune informazioni (nome file, info immagine, ecc.) nella barra a scomparsa

@@ -1,6 +1,6 @@
 <?php
 
-// elenca file nella cartella
+// list files (images) in the $dirname folder
 
 function listfiles($dirname,$arrayext=array('.jpg','.jpeg','.png')){
 	$arrayfiles=Array();
@@ -18,6 +18,38 @@ function listfiles($dirname,$arrayext=array('.jpg','.jpeg','.png')){
 	}
 	sort($arrayfiles);
 	return $arrayfiles;
+}
+
+// get the next elements of the array
+
+function nextItem($list, $current){
+	
+	$numitem = count($list)-1;
+	$poscur = array_search($current, $list);
+	
+	if($poscur == $numitem){
+		$key = 0;
+	} else {
+		$key = $poscur+1;
+	}
+	
+	return $list[$key];
+
+}
+
+function prevItem($list, $current){
+	
+	$numitem = count($list)-1;
+	$poscur = array_search($current, $list);
+	
+	if($poscur == 0){
+		$key = $numitem;
+	} else {
+		$key = $poscur-1;
+	}
+	
+	return $list[$key];
+
 }
 
 ?>
