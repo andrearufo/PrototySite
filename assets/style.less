@@ -4,8 +4,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 //fontface
 
-@import url(http://fonts.googleapis.com/css?family=Arimo:400,700);
-
 @font-face {
     font-family: 'entypo';
     src: url('entypo/entypo.eot');
@@ -22,8 +20,16 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 body{
 	background: #fff;
-	font-family: 'Arimo', sans-serif;
-	font-size: 12px;
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+}
+
+b, strong{
+	font-weight: bold;
+}
+
+i, em{
+	font-style: italic;
 }
 
 // block that contain the layout images in bg (set by jquery)
@@ -32,6 +38,7 @@ body{
 	width: 100%;
 	overflow: auto;
 	background-position: center top;
+	background-repeat: no-repeat;
 	cursor: pointer;
 }
 
@@ -48,11 +55,8 @@ body{
 	border-bottom: 2px solid  rgba(255,255,255,0.8);;
 	
 	h1{
-		float: left;
-		line-height: 32px;
-		text-transform: uppercase;
-		color: white;
-		padding: 0 10px;
+		font-weight: bold;
+		display: none;
 	}
 	
 	a{
@@ -60,8 +64,17 @@ body{
 		text-decoration: none;
 	}
 	
+	.separator{
+		border-right: 1px solid #fff;
+		height: 20px;
+		margin: 6px 20px;
+		width: 1px;
+		padding: 0;
+	}
+		
 	ul{
 		float: right;
+		margin-right: 20px;
 		
 		&>li{
 			float: left;
@@ -74,24 +87,21 @@ body{
 				font-size: 32px;
 			}
 			
-			// list of alla images
-			
 			&>ul{
 				position: absolute;
 				top: 32px;
-				right: 0;
+				right: -20px;
 				background: rgba(0,0,0,0.6);
-				width: 240px;
+				width: 280px;
 				border-radius: 0px 0px 5px 5px;
+				text-shadow: 1px 1px 0px black;
 				
 				li{
 					float: none;
 					
 					a{
 						display: block;
-						font-size: 12px;
-						text-transform: uppercase;
-						padding: 5px;
+						font-size: 14px;
 					}
 				}
 			}
@@ -101,14 +111,13 @@ body{
 
 // possibile errors in the executions
 
-.errore{
+.errore, .start{
 	position: fixed;
-	background: #a00;
 	text-align: center;
 	padding: 20px;
 	border-radius: 5px;
 	color: #fff;
-	top: 50%;
+	top: 30%;
 	left: 50%;
 	width: 600px;
 	margin-left: -300px;
@@ -116,5 +125,18 @@ body{
 	
 	a{
 		color: #fff;
+		font-weight: bold;
 	}
+	
+	p{
+		line-height: 28px;
+	}
+}
+
+.errore{
+	background: #c0392b;
+}
+
+.start{
+	background: #2ecc71;
 }

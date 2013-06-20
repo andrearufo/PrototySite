@@ -5,6 +5,10 @@ PrototySite è uno script in PHP e JavaScript, realizzato da [Andrea Rufo](http:
 
 Questo progetto è dedicato in particolar modo ai grafici con poche competenze di programmazione per una veloce visualizzazione dei prototipi dei loro siti web via internet. Lo scopo è quello di mostrare, nella maniera più veritiera possibile, come realmente appare una grafica all'interno di un browser.
 
+Dalla URL lo script richiama l'immagine e imposta la pagina delle giuste dimensioni per visualizzare centrata e della giusta lunghezza l'immagine voluta che ha la parvenza di essere un sito web all'interno del browser. Questo per fare in modo che un cliente la visualizza delle giuste proporzioni sullo schermo e delle giuste dimensioni per ogni risoluzione.
+
+Per informazioni o contatti: orangedropdesign@gmail.com
+
 Sonnino, 9 giu 2013 23:40
 
 ##Demo##
@@ -21,7 +25,7 @@ Lo script si riduce tutto a pochi file: in particolare a index.php che è il pri
 
 ##Installazione##
 
-* Create il layout in Photoshop ed esportate in JPEG o PNG (si consiglia una larghezza di __1900px__ per una corretta visualizzazione sugli schermi più grandi);
+* Create il layout in Photoshop ed esportate in JPEG o PNG (si consiglia una larghezza di __1920px__ per una corretta visualizzazione sugli schermi più grandi);
 * Salvate tutte le vostre immagini prototipo in una cartella dello script (per esempio in 'images/');
 * Aprite la pagina __index.php__ e configurate i parametri (leggi sotto);
 * Caricate tutti i file del progetto (index.php; assets/ e images/) sul vostro spazio web via FTP;
@@ -62,7 +66,10 @@ Creazione di una barra di utilità invece della lista a tutta pagina
 
 Miglioramento della barra e creazione delle funzioni per la gestiona della navigazion
 
+###ver. 1.3.1###
+
+Nuovi strumenti nella barra, bugfix delle animazioni e bugfix delle funzioni di controllo dell'eistenza immagine. Impendita la ripetizione dello sfondo del contenitore principale (fastidioso per i layout dalla larghezza ridotta).
+
 ##Sviluppi futuri##
 
 * Form per il caricamento di una nuova immagine direttamente dalla pagina web
-* Visualizzazione di alcune informazioni (nome file, info immagine, ecc.) nella barra a scomparsa

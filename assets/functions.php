@@ -52,4 +52,18 @@ function prevItem($list, $current){
 
 }
 
+// last rss news from github
+function lastnews(){
+	$url = "https://github.com/andrearufo/PrototySite/commits/master.atom";
+	$xml = simplexml_load_file($url);
+	$entry = $xml->entry;
+	
+	$titolo = 	$entry -> title;
+	$data	=	implode(".", array_reverse(explode("-", substr($entry -> updated, 0, 10))));
+	$testo	=	strip_tags($entry -> content);
+	
+	return "<h1>$titolo</h1>
+	<p><a href=\"https://github.com/andrearufo/PrototySite\" target=\"_blank\"><strong>$data</strong> $testo</a></p>";
+}
+
 ?>

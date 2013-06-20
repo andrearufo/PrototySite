@@ -14,14 +14,14 @@ $(document).ready(function() {
 		}
 	});
 	
-	$('.list ul').hide();
+	$('#bar ul ul').hide();
 	
-	$('.list').mouseover(function(){
-		$('ul', this).slideDown('fast');
+	$('#bar li').mouseover(function(){
+		$('ul', this).stop().slideDown('fast');
 	});
 	
-	$('.list').mouseleave(function(){
-		$('ul', this).delay(300).slideUp('fast');
+	$('#bar li').mouseleave(function(){
+		$('ul', this).hide();
 	});
 	
 });
